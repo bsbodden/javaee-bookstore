@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.integrallis.modernjee.bookstore</groupId>
+    <artifactId>javaee-bookstore-war</artifactId>
+    <packaging>war</packaging>
+    <name>javaee-bookstore-war</name>
+
+    <parent>
+        <groupId>com.integrallis.modernjee.bookstore</groupId>
+        <artifactId>javaee-bookstore</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.integrallis.modernjee.bookstore</groupId>
+            <artifactId>javaee-bookstore-ejb</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        
+        <!-- JSF and Dependencies -->
+        <dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.1.2</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>1.2_12</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-impl</artifactId>
+			<version>1.2_12</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>el-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>el-impl</groupId>
+			<artifactId>el-impl</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>jsr250-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- RichFaces libraries -->
+		<dependency>
+			<groupId>org.richfaces.framework</groupId>
+			<artifactId>richfaces-api</artifactId>
+			<version>3.3.2.GA</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.richfaces.framework</groupId>
+			<artifactId>richfaces-impl</artifactId>
+			<version>3.3.2.GA</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.richfaces.ui</groupId>
+			<artifactId>richfaces-ui</artifactId>
+			<version>3.3.2.GA</version>
+		</dependency>
+		
+		<!--  EJB API for Injected Resources (annotations) -->
+		<dependency>
+			<groupId>javax.ejb</groupId>
+			<artifactId>ejb-api</artifactId>
+			<version>3.0</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>1.0</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.jms</groupId>
+			<artifactId>jms</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
+		</dependency>
+    </dependencies>
+</project>

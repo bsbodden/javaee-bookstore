@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<server>
+	<mbean code="org.jboss.jms.server.destination.QueueService"
+		name="jboss.messaging.destination:service=Queue,name=QuestionQueue"
+		xmbean-dd="xmdesc/Queue-xmbean.xml">
+		<depends optional-attribute-name="ServerPeer">jboss.messaging:service=ServerPeer</depends>
+		<depends>jboss.messaging:service=PostOffice</depends>
+		<attribute name="JNDIName">QuestionQueue</attribute>
+		<attribute name="RedeliveryDelay">10000</attribute>
+		<attribute name="MaxDeliveryAttempts">3</attribute>
+	</mbean>
+	<mbean code="org.jboss.jms.server.destination.QueueService"
+		name="jboss.messaging.destination:service=Queue,name=AnswerQueue"
+		xmbean-dd="xmdesc/Queue-xmbean.xml">
+		<depends optional-attribute-name="ServerPeer">jboss.messaging:service=ServerPeer</depends>
+		<depends>jboss.messaging:service=PostOffice</depends>
+		<attribute name="JNDIName">AnswerQueue</attribute>
+		<attribute name="RedeliveryDelay">10000</attribute>
+		<attribute name="MaxDeliveryAttempts">3</attribute>
+	</mbean>
+</server>

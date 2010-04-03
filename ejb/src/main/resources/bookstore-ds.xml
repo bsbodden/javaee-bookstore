@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE datasources PUBLIC "-//JBoss//DTD JBOSS JCA Config 1.5//EN" "http://www.jboss.org/j2ee/dtd/jboss-ds_1_5.dtd">
+<datasources>
+   <local-tx-datasource>
+      <jndi-name>bookstoreDatasource</jndi-name>
+      <connection-url>jdbc:derby://localhost:1527/BookStore</connection-url>
+      <driver-class>org.apache.derby.jdbc.ClientDriver</driver-class>
+      <user-name>guest</user-name>
+      <password>password</password>
+   </local-tx-datasource>
+</datasources>
+
