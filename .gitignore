@@ -1,0 +1,9 @@
+**/*.class
+**/target
+db/BookStore
+**/.classpath
+**/.externalToolBuilders
+**/.project
+**/.settings/*
+db/**/.log
+**/bin
