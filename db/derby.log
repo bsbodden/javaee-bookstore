@@ -1,7 +1,0 @@
-Apache Derby Network Server - 10.4.2.0 - (689064) started and ready to accept connections on port 1527 at 2010-04-03 21:22:57.280 GMT 
-----------------------------------------------------------------
-2010-04-04 06:19:14.860 GMT:
- Booting Derby version The Apache Software Foundation - Apache Derby - 10.4.2.0 - (689064): instance a816c00e-0127-c58e-1b89-00000000002e
-on database directory /Users/bsbodden/Documents/Training/Modern JavaEE/day 3/javaee-bookstore/db/BookStore  
-
-Database Class Loader started - derby.database.classpath=''
